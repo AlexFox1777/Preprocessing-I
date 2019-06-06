@@ -1,0 +1,88 @@
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  section .summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .section-size();
+    padding-bottom: 2%;
+    border-bottom: 1px solid black;
+
+    img {
+      width: 35%;
+      height: 35%;
+      border-radius: 8px;
+    }
+
+    div {
+      width: 60%;
+      height: 35%;
+      border: 1px solid #959595;
+      border-radius: 8px;
+      padding: 2%;
+      background: rgba(254, 255, 246, 0.73);
+      p {
+        font-size: @fs-text;
+      }
+    }
+  }
+
+  section {
+    .section-size();
+    .education {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 90%;
+      margin: auto;
+    }
+
+    .education td, .education th {
+      border: 1px solid #ddbe85;
+      padding: 8px;
+    }
+
+    .education tr:nth-child(even) {
+      background-color: #f1f2b7;
+    }
+
+    .education tr:hover {
+      background-color: #ddbe85;
+    }
+
+    .education th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #c17d23;
+      color: white;
+    }
+  }
+
+  .tech-section {
+    article{
+      width: 60%;
+      height: 35%;
+      border: 1px solid #959595;
+      border-radius: 8px;
+      padding: 2%;
+      background: rgba(254, 255, 246, 0.73);
+    }
+    .tech {
+      width: 90%;
+      margin: auto;
+
+      span {
+        font-weight: bold;
+        font-size: @fs-text;
+      }
+
+      li {
+        font-size: @fs-text;
+        padding-top: 2%;
+      }
+    }
+  }
+}
